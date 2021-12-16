@@ -3,7 +3,6 @@ import { Subscription } from 'rxjs';
 import { ApiService } from '../../services/api.service';
 import { SharedService } from '../../services/shared.service';
 import Swal from 'sweetalert2';
-import { saveAs } from "file-saver";
 
 @Component({
   selector: 'app-home',

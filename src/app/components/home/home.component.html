@@ -1,5 +1,6 @@
 <div class="container-fluid">
     
+    <!-- Nav bar -->
     <div hidden class="row form-group mt-4">
         <div class="col-md-8 col-sm-8 col-8">
             <input class="form-control" type="search" placeholder="Nombre del archivo">
@@ -9,6 +10,7 @@
         </div>
     </div>
 
+    <!-- Barra superior -->
     <div class="alert alert-danger" role="alert">
         <div class="row">
             <div class="col-md-6 col-sm-1 col-6">
@@ -23,13 +25,15 @@
         </div>
     </div>
 
+    <!-- Navegador -->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li  class="breadcrumb-item"><a href="">Inicio</a></li>
             <li *ngFor="let item of list" class="breadcrumb-item"><a href="">{{item}}</a></li>
         </ol>
-      </nav>
+    </nav>
 
+    <!-- Acciones -->
     <ul class="list-group">
         <li *ngFor="let object of list_directory" class="list-group-item">
             <div class="row">
@@ -69,4 +73,4 @@
         </div>
       </div>
     </div>
-  </div>
+</div>

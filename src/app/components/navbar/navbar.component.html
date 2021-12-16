@@ -6,16 +6,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <!-- <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li> -->
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">  
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Nombre del archivo">
@@ -26,8 +17,8 @@
 
 <div class="container-fluid">
   <div class="row mt-4">
-    <div class="col-xl-4 col-md-6 mb-4" >
-      <div class="card border-left-info shadow h-100 py-2" style="border-left: solid 4px #D9534F">
+    <div class="col-xl-3 col-md-6 mb-4" >
+      <div (click)="open_page('')" class="card border-left-info shadow h-100 py-2" style="border-left: solid 4px #D9534F; cursor: pointer">
         <div class="card-body">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
@@ -46,8 +37,9 @@
         </div>
       </div>
     </div>
-    <div class="col-xl-4 col-md-6 mb-4" >
-      <div (click)="open_page('users')" class="card border-left-primary shadow h-100 py-2" style="border-left: solid 4px #0275D8;  cursor: pointer">
+
+    <div class="col-xl-3 col-md-6 mb-4" >
+      <div (click)="open_page('usuarios')" class="card border-left-primary shadow h-100 py-2" style="border-left: solid 4px #0275D8;  cursor: pointer">
         <div class="card-body">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
@@ -56,15 +48,32 @@
               <div class="h6 mb-0 text-gray-800">Gestiona actuales y nuevos usuarios</div>
             </div>
             <div class="col-auto">
-              <i style="font-size: 2.5rem" class="bi bi-people text-primary"></i>
+              <i style="font-size: 2.5rem" class="bi bi-person text-primary"></i>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="col-xl-4 col-md-6 mb-4">
-      <div (click)="open_page('permissions')" class="card border-left-success shadow h-100 py-2" style="border-left: solid 4px #5CB85C; cursor: pointer">
+    <div class="col-xl-3 col-md-6 mb-4" >
+      <div (click)="open_page('grupos')" class="card border-left-primary shadow h-100 py-2" style="border-left: solid 4px #C602D8;  cursor: pointer">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div style="color: #C602D8;" class="text-xs font-weight-bold text-uppercase mb-1">
+                Gestión de grupos</div>
+              <div class="h6 mb-0 text-gray-800">Agrupa usuarios por entidades</div>
+            </div>
+            <div class="col-auto">
+              <i style="font-size: 2.5rem; color: #C602D8;" class="bi bi-people"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div (click)="open_page('permisos')" class="card border-left-success shadow h-100 py-2" style="border-left: solid 4px #5CB85C; cursor: pointer">
         <div class="card-body">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">

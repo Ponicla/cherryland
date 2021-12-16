@@ -23,4 +23,10 @@ export class ApiService {
     const url = this.route+route;
     return this.api.post(url, objetc, {responseType: "blob", headers: new HttpHeaders().append("Content-Type", "application/json")}).pipe(map(data  => data));
   }
+
+  obtener(route : String, objetc : Object){
+    const url = this.route+route;
+    return this.api.get(url, objetc).pipe(map(data  => data));
+  }
+  
 }
