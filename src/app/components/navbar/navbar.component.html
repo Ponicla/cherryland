@@ -1,0 +1,83 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand">{{app_name | titlecase }} <img src="{{route_assets}}cereza.png" class="align-baseline"> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li> -->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Nombre del archivo">
+      <button class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row mt-4">
+    <div class="col-xl-4 col-md-6 mb-4" >
+      <div class="card border-left-info shadow h-100 py-2" style="border-left: solid 4px #D9534F">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Cherrylland
+              </div>
+              <div class="row no-gutters align-items-center">
+                <div class="col-auto">
+                  <div class="h6 mb-0 text-gray-800">App de gestión de archivos</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 mb-4" >
+      <div (click)="open_page('users')" class="card border-left-primary shadow h-100 py-2" style="border-left: solid 4px #0275D8;  cursor: pointer">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                Gestión de usuarios</div>
+              <div class="h6 mb-0 text-gray-800">Gestiona actuales y nuevos usuarios</div>
+            </div>
+            <div class="col-auto">
+              <i style="font-size: 2.5rem" class="bi bi-people text-primary"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div (click)="open_page('permissions')" class="card border-left-success shadow h-100 py-2" style="border-left: solid 4px #5CB85C; cursor: pointer">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                Gestión de permisos</div>
+              <div class="h6 mb-0 text-gray-800">Condede o quita permisos de acceso y escritura</div>
+            </div>
+            <div class="col-auto">
+              <i style="font-size: 2.5rem" class="bi bi-key text-success"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
