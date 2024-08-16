@@ -8,7 +8,7 @@ import { map } from "rxjs/operators";
 })
 export class ApiService {
 
-  private route = 'http://localhost:3000/';
+  private route = 'http://192.168.0.96:3000/';
 
   constructor(
     private api: HttpClient

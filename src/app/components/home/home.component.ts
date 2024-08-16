@@ -23,7 +23,6 @@ export class HomeComponent implements OnInit {
   }
   
   ngOnInit(){
-    console.log('Welcome to Cherryland !');
     this.get('files', '');
   }
 
